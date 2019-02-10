@@ -2,9 +2,11 @@
 layout: post
 title:  "spring boot websocket"
 date:   2018-12-14
-author: Dickie Yang
-categories: Java
-tags: springboot websocket
+author: Dickie Yang 
+tags: 
+    - springboot 
+    - websocket 
+    - Java
 ---
 
 

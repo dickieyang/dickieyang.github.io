@@ -3,7 +3,9 @@ layout: post
 title:  "EventSource实现服务器推送"
 date:   2018-01-18
 author: Dickie Yang
-categories: 推送
+tags: 
+    - 推送 
+    - es
 ---
 
 ### 利用Eventsource对象实现服务器推送

@@ -3,7 +3,8 @@ layout: post
 title:  "Git连接GitHub"
 date:   2017-12-26
 author: Dickie Yang
-categories: Git
+tags: 
+    - git 
 ---
 
 ### 1.生成ssh key
