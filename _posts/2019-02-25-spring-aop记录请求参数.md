@@ -9,7 +9,7 @@ tags:
     - aop
     - 日志 
 ---
-## execution表达式
+## 浅析execution表达式
 > execution(modifiers-pattern? ret-type-pattern declaring-type-pattern?name-pattern(param-pattern) 
 throws-pattern?)  
 
@@ -22,7 +22,7 @@ throws-pattern?)
 - 第二个"*":表示类名,*表示所有类
 - .*(..):表示任何方法名，括号表示参数，两个点表示任何参数类型
 
-## Aop记录请求参数    
+## Aop记录请求参数示例   
 ```   
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -72,7 +72,7 @@ public class LogAop {
                     }
                 }
             } catch (Exception ex){
-				//由于在定义@RequestBody注解的方法中spring框架已经消费掉输入流，
+		//由于在定义@RequestBody注解的方法中spring框架已经消费掉输入流，
                 //在调用read()时会抛出异常,此条件下应取spring处理之后的参数对象。
                 String args = writeObjAsString(pjp.getArgs());
                 if (!StringUtils.isEmpty(args)){
